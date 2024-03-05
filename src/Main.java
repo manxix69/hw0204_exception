@@ -4,11 +4,13 @@ public class Main {
         try {
             checkUserData("SDFsd_f5642fdf", "dfsS8Dfdf968", "dfsS8Dfdf968");
         } catch (WrongLoginException e) {
-            System.out.println("Введен недопустимый логин!");;
+            System.out.println("Введен недопустимый логин!");
         } catch (WrongPasswordException e) {
             System.out.println("Введен недопустимый пароль!");
+        } catch (Exception e) {
+            System.out.println("Что-то пошло не так. Попробуйте позднее.");
         } finally {
-            System.out.println("Проверка данных выполнена.");
+            System.out.println("Работа метода checkUserData завершена.");
         }
     }
 
